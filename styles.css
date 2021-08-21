@@ -1,0 +1,17 @@
+body {
+    color: red;
+}
+
+h1 {
+    color : blue;
+}
+
+/* Selecting a id */
+#lib-header {
+    color: gray;
+}
+
+/* Selecting a class */
+.para {
+    color: pink;
+}
