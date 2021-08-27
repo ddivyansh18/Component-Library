@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Divyansh Dixit</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="../index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="../projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="../blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Program Structure In Javascript</h1>
+    <p>
+        Just like all programming languages, programs in JavaScript follow a definite syntax in structure and in this blog we will explore this structure.
+        <br>
+        This blog is based on the second chapter of book “Eloquent JavaScript” available <a href="https://eloquentjavascript.net/02_program_structure.html" target="_blank">here</a>
+    </p>
+    <h3>Expressions and Statements</h3>
+    <p>
+        Any part of code which produces a value is called an expression.
+        <br>
+Every written value is also an expression.
+<br>
+For ex : 25, “JavaScript”, true ;
+<br>
+A program is just a list of simple statements arranged to perform a complex task.
+<br>
+A semicolon after every statement is optional in JavaScript, but it is a good practice to use it after every statement to reduce   ambiguity and confusion.
+    </p>
+
+    <h3>Bindings</h3>
+    <p>
+        Bindings or variables are used to catch and hold values.
+        <br>
+In JavaScript, bindings are usually created using the keywords let, const and var.
+<br>
+For example : let one = 1, two = 2, three;
+<br>
+An empty binding like three in above statement, holds the value undefined.
+<br>
+We should avoid using var to create bindings as it has some confusing properties.
+<br>
+On the other hand, const is used to create constant bindings in which the variable can only hold a single value in its whole lifetime.
+<br>
+Reserved words called keywords can’t be used to create bindings.
+    </p>
+
+    <h3>Function</h3>
+    <p>
+        A function is like many statements wrapped in a single value. 
+        <br>
+        This single value can be applied to execute the wrapped statements.
+        <br>
+For example : console.log(“Hello World”) is a function that will print Hello World in the console.
+    </p>
+
+    <h3>Return Values</h3>
+    <p>
+        When a function produces a value using the wapped statements, it is said to return that value.
+        <br>
+If a function writes text to screen, it is said to produce a side effect, not every function produces side effects.
+<br>
+For example : Math.max(1,5) returns value 5, to print this value to screen we need to execute console.log(Math.max(1,5)) which produces a side effect.
+    </p>
+
+    <h3>Control Flow</h3>
+    <p>
+        In JavaScript, statements are executed line by line from top to bottom.
+        <br>
+We can also make some statements only execute based on certain conditions, this is called conditional execution. This is achieved using if and else statement.
+<br>
+The curly braces {} are used to group multiple statements into a single statement. We can also chain multiple if-else statements if required.
+    </p>
+
+    <h3>While and do-while loops</h3>
+    <p>
+      A loop allows us to do repetitive work easily using some simple statements.
+      <br>
+A statement starting with while indicates a while loop, which runs “while a condition is true”.
+<br>
+Do while loops on the other hand run atleast once, and are “exit controlled loops”, which means that the loop condition is checked after execution of every iteration.  
+    </p>
+
+    <h3>Indenting code</h3>
+    <p>
+        Indentation means adding extra spaces, tabs and empty lines in the code to make it more readable. 
+        <br>
+        It is a good practice to indent our code so that other people can easily read it.
+    </p>
+
+
+    <h3>For loop</h3>
+    <p>
+        It is also a type of loop just like while and do while, but the difference here is that a counter like variable to track the progress of the loop. 
+        <br>
+        Also the syntax contains mandatory two semicolons.
+“break;” is used to instantly come out of a loop
+    </p>
+
+    <h3>Switch</h3>
+    <p>
+        Instead of a if else ladder sometimes it is easier to use switch-case statement.
+        <br>
+There are multiple case statements inside a switch statement, which can be executed based on the case label, if no case label matches then the default case is used.
+<br>
+It is required to use “break;” statement if we want only code related to that label to execute, in case break statement is not used, the execution goes on until a break statement is encountered.
+    </p>
+
+    <h3>Comments</h3>
+    <p>
+        Comments convey additional information to someone who is reading that code, comments are not executed at all, in JavaScript // is used for single line comment and /**/ is used for multiline comment.
+    </p>
+
+    <p>
+        Thus, we discussed a lot of programming constructs which are building blocks of every JavaScript program. 
+    </p>
+
+    <footer class="footer">
+        <div class="footer-header">online presence</div>
+        <ul class="links-social list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/divdixit/" target="_blank">LinkedIn</a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/ddivyansh18" target="_blank">GitHub</a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/observerMonk" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

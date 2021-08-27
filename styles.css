@@ -10,6 +10,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
 }
 
 hr {
@@ -25,11 +28,17 @@ hr {
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 .container-centered {
     max-width: 600px;
     margin: auto;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .container-centered h1, .container-centered p {
@@ -38,6 +47,10 @@ hr {
 
 .container-centered a{
     text-align: center;
+}
+
+.container-centered small{
+    margin: auto;
 }
 
 /** links **/
@@ -66,11 +79,16 @@ hr {
 /** Lists **/
 .list-non-bullet {
     list-style: none;
+    padding-inline-start: 0px;
 }
 
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
+}
+
+.list-non-bullet .container {
+    padding: 1rem;
 }
 
 /** navigation **/
@@ -79,19 +97,22 @@ hr {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .navigation .nav-pills {
-    text-align: right;
+    text-align: center;
 }
 
 .navigation .link {
     color: white;
+    text-align: center;
 }
 
 .navigation .link-active {
@@ -112,7 +133,7 @@ hr {
 }
 
 .hero .hero-heading {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     color: var(--dark-gray);
     text-align: center;
 }
@@ -125,6 +146,7 @@ hr {
 
 .section {
     padding: 2rem;
+    border-radius: 1rem;
 }
 
 .section h1{
@@ -143,6 +165,7 @@ hr {
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .footer .link {
