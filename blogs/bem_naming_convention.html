@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Naming Convention</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Divyansh Dixit</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="../index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="../projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="../blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>BEM Naming Convention</h1>
+    <p>
+        BEM (Block, Element, Modifier) is a naming convention for HTML and CSS classes, it is mainly used to standardize the way in which these classes are named to make them more readable
+    </p>
+
+    <h3>Block</h3>
+    <p>
+        In this naming convention a parent element is thought of as a block which contains child elements, in case of CSS, these child elements are more specific selectors. In BEM, parents are named as they would be named normally.
+    </p>
+
+    <h3>Element</h3>
+    <p>
+        On the other hand, children or elements inside parents are selected using a format of .parentName__childName, the double underscores are used for additional readability. 
+    </p>
+
+    <h3>Modifier</h3>
+    <p>
+        Modifiers are properties which can modify or change the appearance of the parent. In BEM, these are named using a convention like parentName—propertyName, once again the two dashes are there for additional clarity.
+    </p>
+
+
+    <h3>Advantages</h3>
+    <p>
+        The advantage of using BEM is that a developer which doesn’t know about BEM before can still understand the use of various CSS classes even in case of a complex program. It can also serve as a standard that can be common between both developers and designers.
+    </p>
+
+    <h3>Criticisms</h3>
+    <p>
+        Some criticisms of BEM naming convention are, just like all other conventions, its use depends on the person writing it and its correct use can’t be  completely enforced like a syntax of programming language, so if someone writes class names which look like BEM but are not in practice, then it will create confusion. 
+    </p>
+
+    <p>
+        Overall, BEM can be looked as a good practice which can make CSS classes more readable, if the developer trying to implement it understands its correct usage.
+    </p>
+
+    
+    <footer class="footer">
+        <div class="footer-header">online presence</div>
+        <ul class="links-social list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/divdixit/" target="_blank">LinkedIn</a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/ddivyansh18" target="_blank">GitHub</a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/observerMonk" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
